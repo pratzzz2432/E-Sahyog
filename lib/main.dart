@@ -10,11 +10,12 @@ class DisasterManagementApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Disaster Management App',
-      theme: ThemeData(
-        primaryColor: Colors.blue,
-        accentColor: Colors.orange,
-        fontFamily: 'Roboto',
-      ),
+        theme: ThemeData(
+          colorScheme: ColorScheme.light(
+            primary: Colors.blue,
+            secondary: Colors.orange,
+          ),
+        )
       home: LoginScreen(), // Set the login screen as the home
     );
   }

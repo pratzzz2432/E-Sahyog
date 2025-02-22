@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.dis_management"
+    namespace = "dis_management"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 

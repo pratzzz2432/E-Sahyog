@@ -8,36 +8,37 @@ class LoginScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-        TextFormField(
-        decoration: InputDecoration(labelText: 'Email'),
-        SizedBox(height: 16),
-        TextFormField(
-          obscureText: true,
-          decoration: InputDecoration(labelText: 'Password'),
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TextFormField(
+              decoration: InputDecoration(labelText: 'Email'),
+            ),
+            SizedBox(height: 16),
+            TextFormField(
+              obscureText: true,
+              decoration: InputDecoration(labelText: 'Password'),
+            ),
+            SizedBox(height: 24),
+            ElevatedButton(
+              onPressed: () {
+                // Navigate to the home screen
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                );
+              },
+              child: Text('Login'),
+            ),
+            SizedBox(height: 16),
+            GestureDetector(
+              onTap: () {
+                // Navigate to signup screen
+              },
+              child: Text('Don’t have an account? Sign Up'),
+            ),
+          ],
         ),
-        SizedBox(height: 24),
-        ElevatedButton(
-          onPressed: () {
-            // Navigate to the home screen
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => HomeScreen()),
-            );
-          },
-          child: Text('Login'),
-        ),
-        SizedBox(height: 16),
-        GestureDetector(
-          onTap: () {
-            // Navigate to signup screen
-          },
-          child: Text('Don’t have an account? Sign Up'),
-        ),
-        ],
       ),
-    ),
     );
   }
 }
