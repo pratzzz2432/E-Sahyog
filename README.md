@@ -92,8 +92,5 @@ We welcome contributions! Follow these steps:
 
 ---
 
-## License
-This project is licensed under the **MIT License**.
 
-For any queries, contact: **your-email@example.com**
 
